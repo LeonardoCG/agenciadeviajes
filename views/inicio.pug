@@ -1,0 +1,39 @@
+extends ./layout/index
+
+block slider 
+    .slider
+        h1 Rio de Janeiro 
+        em aventure
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna mi, laoreet eu massa eget, tincidunt egestas mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus feugiat lectus at justo dignissim, id hendrerit leo consequat. Aenean id tempus lectus. Donec dolor lorem, condimentum at blandit elementum, ornare nec nulla.
+                p Ut nec neque at quam ultricies faucibus nec eu augue. Praesent vitae feugiat justo, sit amet mattis leo. Maecenas blandit mi metus, vitae commodo erat pellentesque quis. Morbi ac massa et velit interdum fringilla. Morbi purus nisl, pulvinar eget nunc non, placerat ornare nisi.
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="nosotros-incio" class="img-fluid")
+
+        include ./layout/bloque_viajes
+    
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 Marzo de 2022 - 28 Marzo de 2022
+                        p.precio $2500 USD
+    .container 
+        h2.mt-5.text-center Testimoniales
+        .row-mb-5 
+            include ./layout/bloque_testimoniales
+        .col-md-3
+            p Ver mas 
+                a(href=`/testimoniales`, class="btn") 
+                    svg.icon.icon-tabler.icon-tabler-eye(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='1.5' stroke='#a905b6' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        circle(cx='12' cy='12' r='2')
+                        path(d='M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7')
